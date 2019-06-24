@@ -8,6 +8,7 @@ const filtrado = () => {
   return 'filtrado';
 };
 
+
 window.example = {
   example,
   filtrado

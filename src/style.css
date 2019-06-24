@@ -1,0 +1,44 @@
+body {
+  background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
+  background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+      margin: 0;
+}
+h1{
+  font-family: open sans;
+font-style: verdana;
+color: #fff;
+}
+#description{
+  min-height: 70px;
+max-height: 300px;
+width: 500px;
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+box-sizing: border-box;
+font-size: 17px;
+border: none;
+border-radius: 7px;
+text-align: center
+}
+
+#role {
+  background: #2C0C40;
+color: #fff;
+padding: 10px;
+border-radius: 7px;
+position:absolute;
+left: 25%;
+bottom: 20%;
+}
+
+#statistics{
+  background: #2C0C40;
+color: #fff;
+padding: 10px;
+border-radius: 7px;
+position:absolute;
+right: 20%;
+bottom: 20%;
+}
