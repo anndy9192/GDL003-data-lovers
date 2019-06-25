@@ -10,14 +10,19 @@ h1{
 font-style: verdana;
 color: #fff;
 }
-#description{
-  min-height: 70px;
-max-height: 300px;
-width: 500px;
-background: rgba(0, 0, 0, 0.5);
+p{
+  font-family: open sans;
+font-style: verdana;
 color: #fff;
+}
+#description{
+  color: #fff;
+  font-size: 17px;
+  min-height: 80px;
+max-height: 500px;
+width: 600px;
+background: rgba(0, 0, 0, 0.5);
 box-sizing: border-box;
-font-size: 17px;
 border: none;
 border-radius: 7px;
 text-align: center
