@@ -1,50 +1,46 @@
-let AssassinArray = []
-let MarksmanArray = []
-let TankArray = []
-let FighterArray = []
-let MageArray = []
-let SupportArray = []
-//i va a tomar el valor de cada elemento de data
-for (i in lol.data) {
-//si el elemento que se esta iterando (recorriendo) de lol.data tiene su propia propiedad
-    if (lol.data.hasOwnProperty(i)) {
-//a let elemen se le asigna objeto que se esta iterando 
-        let element = lol.data[i];
-//por cada un elemento del array tags de element "el" toma el valor 
-		element.tags.forEach( el => {
-//si 'el' es == ese tags, lo guarda en el array que se le asigno (push-empujar) 
-            if(el == "Assassin"){
-				//console.log("Assassin: ", element.name)
-//agarra el valor del elemnt name
-				AssassinArray.push(element.name)
-        	}
-			else if(el == "Marksman"){
-				//console.log("Marksman: ", element.name)
-				MarksmanArray.push(element.name)
-        	}
-			else if(el == "Tank"){
-				//console.log("Tank: ", element.name)
-				TankArray.push(element.name)
-        	}
-			else if(el == "Fighter"){
-				//console.log("Fighter: ", element.name)
-				FighterArray.push(element.name)
-        	}
-			else if(el == "Mage"){
-				//console.log("Mage: ", element.name)
-				MageArray.push(element.name)
-        	}
-			else if(el == "Support"){
-				//console.log("Support: ", element.name)
-				SupportArray.push(element.name)
-        	}
-        })
-    }
-}
+//Guardar todos los botones en un arreglo
+let buttonsRole = document.querySelectorAll(".btnRole");
+console.log(buttonsRole);
 
-console.log("Assassin: ", AssassinArray);
-console.log("Marksman: ", MarksmanArray);
-console.log("Tank: ", TankArray);
-console.log("Fighter: ", FighterArray);
-console.log("Mage: ", MageArray);
-console.log("Support: ", SupportArray);
+buttonsRole.forEach(button => {
+	button.addEventListener("click", function () {
+		//Asignar a la variable result el retorno de la funcion filtrado
+		let result = filtrado(lol, button.value);
+		console.log(result);
+		drawCards(result);
+	});
+});
+
+
+//Funcion para pintar las cartas
+function drawCards(filteredCharacters) {
+
+	const searchOutput = document.querySelector('.cards');
+	let output = '';
+	//* Se recorreo el arreglo y se genera una tarjeta por cada elemento
+	filteredCharacters.forEach(champion => {
+		output += `
+			<div class="card">
+				<h1>${champion.name}</h1>
+				<img src="${champion.img}">
+				<p class="title">Stats:</p>
+				<p>Attack: ${champion.info.attack}</p>
+				<p>Defense: ${champion.info.defense}</p>
+				<p>Magic: ${champion.info.magic}</p>
+				<p>Difficulty: ${champion.info.difficulty}</p>
+				<p><button class="more" id="${champion.name}">More</button></p>
+			</div>
+			`;
+	});
+
+	searchOutput.innerHTML = output;
+
+	let buttonsMore = document.querySelectorAll(".more");
+	console.log(buttonsMore);
+
+	buttonsMore.forEach(button => {
+		button.addEventListener("click", function () {
+			alert(button.id);
+		});
+	});
+}
