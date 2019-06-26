@@ -2,6 +2,7 @@
 let buttonsRole = document.querySelectorAll(".btnRole");
 console.log(buttonsRole);
 
+
 buttonsRole.forEach(button => {
 	button.addEventListener("click", function () {
 		//Asignar a la variable result el retorno de la funcion filtrado
@@ -14,6 +15,7 @@ buttonsRole.forEach(button => {
 
 //Funcion para pintar las cartas
 function drawCards(filteredCharacters) {
+
 
 	const searchOutput = document.querySelector('.cards');
 	let output = '';
@@ -43,4 +45,5 @@ function drawCards(filteredCharacters) {
 			alert(button.id);
 		});
 	});
+
 }
