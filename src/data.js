@@ -19,6 +19,7 @@ const filtrado = (lol, role) => {
       });
     }
   }
+  console.log(filtrado)
   return filtrado;
 };
 
