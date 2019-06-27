@@ -1,6 +1,12 @@
+let home =document.querySelector('.home');
+let rolechampion = document.querySelector ('.rolechampion')
+rolechampion.style.display="block";
+home.style.display="none";
+
 //Guardar todos los botones en un arreglo
 let buttonsRole = document.querySelectorAll(".btnRole");
 console.log(buttonsRole);
+
 
 buttonsRole.forEach(button => {
 	button.addEventListener("click", function () {
@@ -10,19 +16,19 @@ buttonsRole.forEach(button => {
 		drawCards(result);
 	});
 });
-
-
 //Funcion para pintar las cartas
 function drawCards(filteredCharacters) {
 
+
 	const searchOutput = document.querySelector('.cards');
 	let output = '';
-	//* Se recorreo el arreglo y se genera una tarjeta por cada elemento
+	//* Se recorre el arreglo y se genera una tarjeta por cada elemento
 	filteredCharacters.forEach(champion => {
 		output += `
+		<div class="container">
 			<div class="card">
 				<h1>${champion.name}</h1>
-				<img src="${champion.img}">
+				<img src="${champion.img}" width="30px" height="30px">
 				<p class="title">Stats:</p>
 				<p>Attack: ${champion.info.attack}</p>
 				<p>Defense: ${champion.info.defense}</p>
@@ -30,7 +36,8 @@ function drawCards(filteredCharacters) {
 				<p>Difficulty: ${champion.info.difficulty}</p>
 				<p><button class="more" id="${champion.name}">More</button></p>
 			</div>
-			`;
+		</div>
+		`;
 	});
 
 	searchOutput.innerHTML = output;
@@ -43,4 +50,5 @@ function drawCards(filteredCharacters) {
 			alert(button.id);
 		});
 	});
+
 }

@@ -1,10 +1,15 @@
-body {
+
+.home {
   background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
   background-repeat: no-repeat;
-      background-size: 100vw 100vh;
+  background-size:100% 100%;
       background-attachment: fixed;
       margin: 0;
 }
+body{
+  background: black;
+}
+
 h1{
   font-family: open sans;
 font-style: verdana;
@@ -61,48 +66,59 @@ button{
   padding: 4px 50px;
 }
 */
-rolechampion {
-
-  display: flex;
-  font-size:0;
+/*.btnRole {
+  display: inline;
+  float: left;
+  font-size:15px;
     line-height: 0;
- }
+    width: 33%;
+    height: 100%;
+  background: nome;
 
-img{
+ }*/
 
-top: 25px; /* ajustar los valores para mover la imagen */
-left: -20px;
-width: 435px;
-height: 310px;
-margin: 0.3%;
-border:2px ;
-display: block;
-float: left;
- }
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(88, 74, 74, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  
-}
-
-.title {
-  color: black;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
+ .btnRole {
+  line-height: 50px;
+  width: 435px;
+  height: 310px;
   color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+  background-size: cover;
+  /* <-- escalar la imagen para cubrir el boton */
+  background-position: center center;
+  /* <-- centrar la imagen en el boton */
 }
+
+.container{
+  display: inline;
+  float: left;
+  font-size:15px;
+    line-height: 0;
+    width: 20%;
+    height: 100%;
+}
+ .card {
+   box-shadow: 0 4px 8px 0 rgba(88, 74, 74, 0.2);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+   font-family: arial;
+
+ }
+
+ .title {
+   color: black;
+   font-size: 18px;
+ }
+
+ button {
+   border: none;
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: white;
+   background-color: #000;
+   text-align: center;
+   cursor: pointer;
+   width: 100%;
+   font-size: 18px;
+ }

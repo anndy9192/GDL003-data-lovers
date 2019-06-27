@@ -1,98 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <style type="text/css"></style>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <title>League of legends</title>
-    <center>
-      <div class="home">
-        <h1>League of legends</h1>
-      <textarea rows="8" cols="80" id="description">"¿Qué es League of Legends?
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <style type="text/css"></style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <title>League of legends</title>
+  <center>
+    <div class="home">
+      <h1>League of legends</h1>
+      <textarea rows="8" cols="80"
+        id="description">"¿Qué es League of Legends?
    Un juego competitivo en línea, que fusiona la velocidad y la intensidad de la estrategia en tiempo real con elementos de juegos de rol, dos equipos de campeones, compiten cara a cara a través de campos de batalla, ofrece posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad."</textarea>
-        <br><br>
-      <!--  <input type="button" id="role" value="Rol de campeones"> -->
-      <!--  <input type="button"  id="statistics" value="Estadisticas de campeones">-->
-      <div class="slick list" >
-        <a href="index.html">  <input type="button"  id="statistics" value="Estadisticas de campeones"></a>
-        <a href="index.html"><input type="button" id="role" value="Rol de campeones"></a>
+      <br><br>
+      <div class="slick list">
+        <a href="index.html"> <input type="button" id="statistics" value="Estadisticas de campeones"></a>
+        <a href="index.html"><input type="button" id="role" onClick="rolechampion" value="Rol de campeones"></a>
+      </div>
+    </div>
+
+  <div class="rolechampion">
+    <center>
+      <button type="button" class="btnRole" value="Assassin"
+        style="background-image: url(https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/ assassins-banner.jpg?itok=AwzrM7_z)" onClick="document.getElementById('cardsContainer').scrollIntoView();" >Assassin</button>
+
+      <button type="button" class="btnRole" value="Marksman"
+        style="background-image: url(https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d)" onclick="window.location.href='#cardsContainer'">
+        Marksman</button>
+
+      <button type="button" class="btnRole" value="Tank"
+        style="background-image: url(https://i.ytimg.com/vi/2QvS_v7S9Rc/maxresdefault.jpg)" onclick="window.location.href='#cardsContainer'"> Tank</button>
+
+      <button type="button" class="btnRole" value="Fighter"
+        style="background-image: url(https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/16/a4/77/16a477b8-a219-374c-4388-1bbd0427ffec/source/200x200bb.jpg)" onclick="window.location.href='#cardsContainer'">
+        Fighter</button>
+
+      <button type="button" class="btnRole" value="Support"
+        style="background-image: url(https://gamerstyle.com.mx/wp-content/uploads/2018/05/PIKE-LEAGUE-OF-LEGENDS-770x433.jpg)" onclick="window.location.href='#cardsContainer'">
+        Support</button>
+
+      <button type="button" class="btnRole" value="Mage"
+        style="background-image: url(https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/pages/2016/june/ryze/img/ryze-splash-1.jpg)" onclick="window.location.href='#cardsContainer'">
+        Mage</button>
+    </center>
+  </div>
+
+  <div id="cardsContainer">
+      <div class="row cards">
       </div>
   </div>
-<!--<ul class="slick dots">
-        <li class>
-          <a href= "https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/assassins-banner.jpg?itok=AwzrM7_z" alt="img-responsive img">
-            <button>
-        </li>
-      <li class="slick-active">
-        <button>
-      </li>
-      <li class="tank">
-        <a href= "https://i.ytimg.com/vi/2QvS_v7S9Rc/maxresdefault.jpg" alt="img-responsive img">
-          <button>
-      </li>
-      <li class>
-        <a href= "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/pages/2016/june/ryze/img/ryze-splash-1.jpg" alt="img-responsive img">
-          <button>
-      </li>
-      <li class>
-        <a href= "https://gamerstyle.com.mx/wp-content/uploads/2018/05/PIKE-LEAGUE-OF-LEGENDS-770x433.jpg" alt="img-responsive img">
-          <button>
-      </li>
-      <li class>
-        <a href= "https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d" alt="img-responsive img">
-        <button>
-      </li>
-</ul> -->
-</center>
 
-<  <div class="rolechampion">
-      <div class="assassins">
-          <img src="https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/assassins-banner.jpg?itok=AwzrM7_z" alt="img-responsive img">
-        </div>
-        <div class="Fighter">
-      <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/16/a4/77/16a477b8-a219-374c-4388-1bbd0427ffec/source/200x200bb.jpg" alt="img-responsive img">
-        </div>
-        <div class="Tank">
-      <img src="https://i.ytimg.com/vi/2QvS_v7S9Rc/maxresdefault.jpg" alt="img-responsive img">
-        </div>
-        <div class="mage">
-      <img src="https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/pages/2016/june/ryze/img/ryze-splash-1.jpg" alt="img-responsive img">
-        </div>
-        <div class="Support">
-      <img src="https://gamerstyle.com.mx/wp-content/uploads/2018/05/PIKE-LEAGUE-OF-LEGENDS-770x433.jpg" alt="img-responsive img">
-        </div>
-        <div class="Marksman">
-      <img src="https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d" alt="img-responsive img">
-        </div>
-    </div>
-      
-          <div class="container">
-              <div class="row search-output">
-      
-              </div>
-          </div>
-      </div>
-    </center>
-    <button type="button" class="btnRole" value="Assassin">Assassin</button>
-    <button type="button" class="btnRole" value="Marksman">Marksman</button>
-    <button type="button" class="btnRole" value="Tank">Tank</button>
-    <button type="button" class="btnRole" value="Fighter">Fighter</button>
-    <button type="button" class="btnRole" value="Support">Support</button>
-    <button type="button" class="btnRole" value="Mage">Mage</button>
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
 
-    
-    <div>
-        <div class="container">
-            <div class="row cards">
-            </div>
-        </div>
-    </div>
-   <script src="./data/lol/lol.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
 </html>
