@@ -13,6 +13,7 @@ buttonsRole.forEach(button => {
 		//Asignar a la variable result el retorno de la funcion filtrado
 		let result = filtrado(lol, button.value);
 		console.log(result);
+		console.log(button)
 		drawCards(result);
 	});
 });
