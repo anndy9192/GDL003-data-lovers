@@ -52,7 +52,6 @@ position:absolute;
 right: 20%;
 bottom: 20%;
 }
-
  .btnRole {
   line-height: 50px;
   width: 435px;
@@ -66,12 +65,13 @@ bottom: 20%;
 
 .container{
   display: inline;
-  
+  float: left;
   font-size:15px;
-    line-height: 0;
-  
+  line-height: 0;
+  width: 20%;
+  height: 100%;
 }
- .card {
+ .card {   
    box-shadow: 0 4px 8px 0 rgba(88, 74, 74, 0.2);
    max-width: 300px;
    margin: auto;

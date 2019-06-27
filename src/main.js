@@ -1,5 +1,5 @@
 let home =document.querySelector('.home');
-let rolechampion = document.querySelector ('.rolechampion')
+let rolechampion = document.querySelector ('.rolechampion');
 rolechampion.style.display="block";
 home.style.display="none";
 
@@ -13,7 +13,6 @@ buttonsRole.forEach(button => {
 		//Asignar a la variable result el retorno de la funcion filtrado
 		let result = filtrado(lol, button.value);
 		console.log(result);
-		console.log(button)
 		drawCards(result);
 	});
 });
