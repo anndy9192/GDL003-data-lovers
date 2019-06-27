@@ -1,9 +1,15 @@
-body {
+#btnAssassin{
+  background-image: url ("https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d");
+}
+.home {
   background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
   background-repeat: no-repeat;
       background-size: 100vw 100vh;
       background-attachment: fixed;
       margin: 0;
+}
+body{
+  background: black;
 }
 h1{
   font-family: open sans;
@@ -61,12 +67,17 @@ button{
   padding: 4px 50px;
 }
 */
-rolechampion {
+.btnRole {
+  line-height: 50px;
+  width: 435px;
+  height: 310px;
+  color: white;
+  background-size: cover;
+  /* <-- escalar la imagen para cubrir el boton */
+  background-position: center center;
+  /* <-- centrar la imagen en el boton */
+}
 
-  display: flex;
-  font-size:0;
-    line-height: 0;
- }
 
 img{
 
@@ -74,8 +85,8 @@ top: 25px; /* ajustar los valores para mover la imagen */
 left: -20px;
 width: 435px;
 height: 310px;
-margin: 0.3%;
-border:2px ;
+margin: 0%;
+border:0px ;
 display: block;
 float: left;
  }
@@ -107,4 +118,38 @@ float: left;
    width: 100%;
    font-size: 18px;
  }
-
+.asstxt{
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
+.arktex{
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+.marktext{
+  position: absolute;
+  top: 300px;
+  left: 600px;
+}
+.figtxt{
+  position: absolute;
+  top: 300px;
+  left: 1050px;
+}
+.tanktxt{
+  position: absolute;
+  top: 600px;
+  left: 1050px;
+}
+.supptxt{
+  position: absolute;
+  top: 600px;
+  left: 600px;
+}
+.magtxt{
+  position: absolute;
+  top: 600px;
+  left: 150px;
+}

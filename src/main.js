@@ -1,3 +1,10 @@
+let home =document.querySelector('.home');
+let rolechampion= document.querySelector(".rolechampion");
+
+home.style.display="none";
+rolechampion.style.display="block;"
+
+
 //Guardar todos los botones en un arreglo
 let buttonsRole = document.querySelectorAll(".btnRole");
 console.log(buttonsRole);
