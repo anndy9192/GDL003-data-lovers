@@ -20,4 +20,6 @@ describe("filtrado", () => {
   it('returns `filtrado`', () => {
     expect(example.filtrado()).toBe('filtrado');
   });
+
 });
+
