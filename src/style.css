@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 #btnAssassin{
   background-image: url ("https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d");
 }
-=======
-
->>>>>>> 4d7899e0e3bd1423811a6235a25c49a6829b974a
 .home {
   background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
   background-repeat: no-repeat;
@@ -15,10 +11,7 @@
 body{
   background: black;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 4d7899e0e3bd1423811a6235a25c49a6829b974a
 h1{
   font-family: open sans;
 font-style: verdana;
@@ -42,7 +35,7 @@ border-radius: 7px;
 text-align: center
 }
 
-#role {
+#roles {
   background: #2C0C40;
 color: #fff;
 padding: 10px;
