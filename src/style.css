@@ -1,6 +1,3 @@
-#btnAssassin{
-  background-image: url ("https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d");
-}
 .home {
   background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
   background-repeat: no-repeat;
@@ -73,39 +70,7 @@ bottom: 20%;
   width: 20%;
   height: 100%;
 }
-
-button{
-  padding: 4px 50px;
-}
-
-.btnRole {
-  line-height: 50px;
-  width: 435px;
-  height: 310px;
-  color: white;
-  background-size: cover;
-  /* <-- escalar la imagen para cubrir el boton */
-  background-position: center center;
-  /* <-- centrar la imagen en el boton */
-}
-
-
-img{
-
-top: 25px; /* ajustar los valores para mover la imagen */
-left: -20px;
-width: 435px;
-height: 310px;
-margin: 0%;
-border:0px ;
-display: block;
-float: left;
- }
-
-
-
  .card {   
-
    box-shadow: 0 4px 8px 0 rgba(88, 74, 74, 0.2);
    max-width: 300px;
    margin: auto;
