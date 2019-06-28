@@ -4,6 +4,7 @@
   background-size:100% 100%;
       background-attachment: fixed;
       margin: 0;
+  height: 100vh;
 }
 body{
   background: black;
@@ -96,3 +97,4 @@ bottom: 20%;
    width: 100%;
    font-size: 18px;
  }
+
