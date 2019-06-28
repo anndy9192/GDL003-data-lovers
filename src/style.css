@@ -1,4 +1,3 @@
-
 .home {
   background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
   background-repeat: no-repeat;
@@ -33,7 +32,7 @@ border-radius: 7px;
 text-align: center
 }
 
-#role {
+#roles {
   background: #2C0C40;
 color: #fff;
 padding: 10px;

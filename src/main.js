@@ -1,7 +1,16 @@
 let home =document.querySelector('.home');
 let rolechampion = document.querySelector ('.rolechampion');
-rolechampion.style.display="block";
-home.style.display="none";
+rolechampion.style.display="none";
+//home.style.display="block";
+
+let roles= document.getElementById("roles");
+console.log(roles);
+roles.addEventListener("click", function(event) {
+	event.preventDefault(event);
+	rolechampion.style.display="block";
+	home.style.display="none";
+});
+
 
 //Guardar todos los botones en un arreglo
 let buttonsRole = document.querySelectorAll(".btnRole");
@@ -51,4 +60,6 @@ function drawCards(filteredCharacters) {
 		});
 	});
 
+	
+	
 }
