@@ -23,6 +23,12 @@ const filtrado = (lol, role) => {
   return filtrado;
 };
 
+const sorted = (charachters) => {
+  let sorted = charachters;
+  sorted.reverse();
+  return sorted;
+}
+
 const example = () => {
   return 'example';
 };

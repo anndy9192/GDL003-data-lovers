@@ -1,11 +1,23 @@
 let home =document.querySelector('.home');
 let rolechampion = document.querySelector ('.rolechampion');
 rolechampion.style.display="none";
+let result
+
 //home.style.display="block";
+
+let order= document.getElementById("btnOrder");
+
+
+order.addEventListener("click" , function() {
+		
+	let reversedCharacters = sorted(result);
+	drawCards(reversedCharacters)
+});
 
 let roles= document.getElementById("roles");
 console.log(roles);
 roles.addEventListener("click", function(event) {
+	//Evita que el boton se recargue
 	event.preventDefault(event);
 	rolechampion.style.display="block";
 	home.style.display="none";
@@ -20,19 +32,20 @@ console.log(buttonsRole);
 buttonsRole.forEach(button => {
 	button.addEventListener("click", function () {
 		//Asignar a la variable result el retorno de la funcion filtrado
-		let result = filtrado(lol, button.value);
+		result = filtrado(lol, button.value);
 		console.log(result);
 		drawCards(result);
 	});
 });
+
 //Funcion para pintar las cartas
 function drawCards(filteredCharacters) {
-
 
 	const searchOutput = document.querySelector('.cards');
 	let output = '';
 	//* Se recorre el arreglo y se genera una tarjeta por cada elemento
 	filteredCharacters.forEach(champion => {
+		
 		output += `
 		<div class="container">
 			<div class="card">
