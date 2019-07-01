@@ -19,22 +19,26 @@ const filtrado = (lol, role) => {
       });
     }
   }
-  console.log(filtrado)
+  console.log(filtrado);
   return filtrado;
 };
+/*
+const sorted = (characters) =>{
+  let sorted= characters;
+  alert (sorted.sort(function(a, b){return a.toLowerCase().localeCompare(b.toLowerCase());)
+});
+}
+*/
 
 const sorted = (charachters) => {
   let sorted = charachters;
   sorted.reverse();
   return sorted;
-}
-
-const example = () => {
-  return 'example';
 };
 
 
+
 window.example = {
-  example,
+  sorted,
   filtrado
 };

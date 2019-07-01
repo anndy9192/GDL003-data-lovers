@@ -3,7 +3,7 @@ var lol = {
   format: "standAloneComplex",
   version: "6.24.1",
   data: {
-    Aatrox: {
+    x: {
       version: "6.24.1",
       id: "Aatrox",
       key: "266",

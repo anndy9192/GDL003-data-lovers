@@ -9,6 +9,7 @@
   "globals": {
     "lol": false,
     "example": false
+    
   },
   "rules": {
     "no-console": 0,

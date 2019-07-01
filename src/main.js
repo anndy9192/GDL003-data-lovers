@@ -1,7 +1,7 @@
 let home =document.querySelector('.home');
 let rolechampion = document.querySelector ('.rolechampion');
 rolechampion.style.display="none";
-let result
+let result;
 
 //home.style.display="block";
 
@@ -10,8 +10,8 @@ let order= document.getElementById("btnOrder");
 
 order.addEventListener("click" , function() {
 		
-	let reversedCharacters = sorted(result);
-	drawCards(reversedCharacters)
+	let reversedCharacters = window.example.sorted(result);
+	drawCards(reversedCharacters);
 });
 
 let roles= document.getElementById("roles");
@@ -32,7 +32,7 @@ console.log(buttonsRole);
 buttonsRole.forEach(button => {
 	button.addEventListener("click", function () {
 		//Asignar a la variable result el retorno de la funcion filtrado
-		result = filtrado(lol, button.value);
+		result = window.example.filtrado(lol, button.value);
 		console.log(result);
 		drawCards(result);
 	});
