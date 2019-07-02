@@ -1,5 +1,5 @@
 require('../src/data.js');
-require('../src/data/lol/lol.js');
+const lol = require('../src/data/lol/lol.json');
 
 /*
 describe('example', () => {
@@ -19,7 +19,8 @@ describe("filtrado", () => {
     expect(typeof example.filtrado).toBe("function");
   });
   it('returns `filtrado`', () => {
-    expect(example.filtrado()).toBe('false');
+    expect(example.filtrado(lol.data.Ahri, 'Assassin')).toBe(lol.data.Ahri);
+  console.log(lol);
   });
 
 });

@@ -2,13 +2,14 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const filtrado = (lol, role) => {
+  console.log(lol);
   let filtrado = [];
   //Recoririendo todos los personajes
-  for (let i in lol.data) {
-    //si el elemento que se esta iterando (recorriendo) de lol.data tiene su propia propiedad (hasOwnProperty) verifica si tiene propiedades
-    if (lol.data.hasOwnProperty(i)) {
+  for (let i in lol) {
+    //si el elemento que se esta iterando (recorriendo) de lol tiene su propia propiedad (hasOwnProperty) verifica si tiene propiedades
+    if (lol.hasOwnProperty(i)) {
       //a let element se le asigna objeto que se esta iterando 
-      let element = lol.data[i];
+      let element = lol[i];
       //por cada un elemento del array tags de element se llamara champion 
       element.tags.forEach(champion => {
         //si champion es == al rol, lo guarda en arreglo filtrado 
@@ -35,8 +36,6 @@ const sorted = (charachters) => {
   sorted.reverse();
   return sorted;
 };
-
-
 
 window.example = {
   sorted,

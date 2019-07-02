@@ -28,11 +28,12 @@ roles.addEventListener("click", function(event) {
 let buttonsRole = document.querySelectorAll(".btnRole");
 console.log(buttonsRole);
 
+//console.log(lol)
 
 buttonsRole.forEach(button => {
 	button.addEventListener("click", function () {
 		//Asignar a la variable result el retorno de la funcion filtrado
-		result = window.example.filtrado(lol, button.value);
+		result = window.example.filtrado(lol.data, button.value);
 		console.log(result);
 		drawCards(result);
 	});
