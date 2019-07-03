@@ -30,7 +30,44 @@ const sorted = (charachters) => {
   return sorted;
 };
 
+const computeStats = (allCharachters) => {
+  var arrayStatistics = [];
+
+  arrayStatistics.push({
+    "Role"  : "Assassin",
+    "Count" : filtrado(allCharachters, "Assassin").length
+  });
+
+  arrayStatistics.push({
+    "Role"  : "Marksman",
+    "Count" : filtrado(allCharachters, "Marksman").length
+  });
+
+  arrayStatistics.push({
+    "Role"  : "Tank",
+    "Count" : filtrado(allCharachters, "Tank").length
+  });
+
+  arrayStatistics.push({
+    "Role"  : "Fighter",
+    "Count" : filtrado(allCharachters, "Fighter").length
+  });
+
+  arrayStatistics.push({
+    "Role"  : "Support",
+    "Count" : filtrado(allCharachters, "Support").length
+  });
+
+  arrayStatistics.push({
+    "Role"  : "Mage",
+    "Count" : filtrado(allCharachters, "Mage").length
+  });
+
+  return arrayStatistics;
+};
+
 window.example = {
   sorted,
-  filtrado
+  filtrado,
+  computeStats
 };
