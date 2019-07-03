@@ -73,7 +73,13 @@ function drawCards(filteredCharacters) {
 		});
 	});
 
+<<<<<<< HEAD
 
 	
 }
 
+=======
+	
+	
+}
+>>>>>>> 1756a6b5a570a0933057660632d8614980faf389
