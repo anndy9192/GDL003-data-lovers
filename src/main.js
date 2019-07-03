@@ -35,7 +35,7 @@ btnStatistics.addEventListener("click", function(event) {
 	event.preventDefault(event);
 	estadisticas.style.display="block";
 	home.style.display="none";
-	let statistics = window.example.computeStats(lol.data)
+	let statistics = window.example.computeStats(lol.data);
 	console.log(statistics);
 
 	const statisticsOutput=document.querySelector('.allStatistics');
@@ -52,7 +52,7 @@ btnStatistics.addEventListener("click", function(event) {
 			</div>
 		</div>
 		`;
-	})
+	});
 	
 	statisticsOutput.innerHTML=output;
 
