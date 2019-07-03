@@ -71,8 +71,5 @@ function drawCards(filteredCharacters) {
 		button.addEventListener("click", function () {
 			alert(button.id);
 		});
-	});
-
-	
-	
+	});	
 }
