@@ -2,7 +2,6 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const filtrado = (allCharachters, role) => {
-  console.log(allCharachters);
   //console.log(allCharachters);
   let filtrado = [];
   //Recoririendo todos los personajes
@@ -20,6 +19,7 @@ const filtrado = (allCharachters, role) => {
         }
       });
     }
+  }
   //console.log(filtrado);
   return filtrado;
 };
