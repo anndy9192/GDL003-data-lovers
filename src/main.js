@@ -109,3 +109,4 @@ function drawCards(filteredCharacters) {
 		});
 	});
 }
+
