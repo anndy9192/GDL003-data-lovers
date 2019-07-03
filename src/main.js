@@ -3,8 +3,6 @@ let rolechampion = document.querySelector ('.rolechampion');
 rolechampion.style.display="none";
 let result;
 
-//home.style.display="block";
-
 let order= document.getElementById("btnOrder");
 
 
@@ -14,9 +12,10 @@ order.addEventListener("click" , function() {
 	drawCards(reversedCharacters);
 });
 
-let roles= document.getElementById("roles");
-console.log(roles);
-roles.addEventListener("click", function(event) {
+let btnRoles= document.getElementById("roles");
+
+console.log(btnRoles);
+btnRoles.addEventListener("click", function(event) {
 	//Evita que el boton se recargue
 	event.preventDefault(event);
 	rolechampion.style.display="block";
