@@ -34,3 +34,13 @@ describe("sorted", () => {
   });
 
 });
+
+describe("computeStats", () => {
+  it("is a function", () => {
+    expect(typeof example.computeStats).toBe("function");
+  });
+  it('returns `computeStats`', () => {
+    expect(example.computeStats()).toBe('computeStats');
+  });
+
+});
