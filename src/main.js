@@ -72,4 +72,5 @@ function drawCards(filteredCharacters) {
 			alert(button.id);
 		});
 	});
+}
 
