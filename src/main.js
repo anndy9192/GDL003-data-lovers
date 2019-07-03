@@ -3,8 +3,6 @@ let rolechampion = document.querySelector ('.rolechampion');
 rolechampion.style.display="none";
 let result;
 
-//home.style.display="block";
-
 let order= document.getElementById("btnOrder");
 
 
@@ -14,9 +12,10 @@ order.addEventListener("click" , function() {
 	drawCards(reversedCharacters);
 });
 
-let roles= document.getElementById("roles");
-console.log(roles);
-roles.addEventListener("click", function(event) {
+let btnRoles= document.getElementById("roles");
+
+console.log(btnRoles);
+btnRoles.addEventListener("click", function(event) {
 	//Evita que el boton se recargue
 	event.preventDefault(event);
 	rolechampion.style.display="block";
@@ -28,11 +27,12 @@ roles.addEventListener("click", function(event) {
 let buttonsRole = document.querySelectorAll(".btnRole");
 console.log(buttonsRole);
 
+//console.log(lol)
 
 buttonsRole.forEach(button => {
 	button.addEventListener("click", function () {
 		//Asignar a la variable result el retorno de la funcion filtrado
-		result = window.example.filtrado(lol, button.value);
+		result = window.example.filtrado(lol.data, button.value);
 		console.log(result);
 		drawCards(result);
 	});
