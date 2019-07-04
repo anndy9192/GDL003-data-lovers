@@ -1,11 +1,56 @@
-.home {
-  background: url("https://i.ibb.co/wKHZV92/pantalla1.jpg");
-  background-repeat: no-repeat;
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+#btnOrder {
+background-color: #000;
+font-family: Beaufort for LOL,serif;
+font-size: 1.2rem;
+color: #937341;
+border: 2px solid  #937341;
+}
+
+.reinicio {
+right: 20%;
+bottom: 20%;
+background-color: #000;
+padding: 10px;
+position:none;
+font-family: Beaufort for LOL,serif;
+font-size: 1.2rem;
+color: #937341;
+border: 2px solid  #937341;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#logo{
+  border-top: #000;
+  height: 80vh; 
   background-size:100% 100%;
-      background-attachment: fixed;
-      margin: 0;
+  float: left;
+}
+
+.home {
+  background: url("https://lolstatic-a.akamaihd.net/site/bilgewater/1d0e96db6bd69523cf508365e1042f93171e3deb/img/act-1/act-1-world-layer-foreground.jpg");
+  background-repeat: no-repeat;
+  background-size:10 0% 100%;
   height: 100vh;
 }
+
 body{
   background: black;
 }
@@ -20,37 +65,42 @@ p{
 font-style: verdana;
 color: #fff;
 }
+
 #description{
-  color: #fff;
+  font-family: Beaufort for LOL,serif;
+  color: #937341;
   font-size: 17px;
   min-height: 80px;
 max-height: 500px;
 width: 600px;
-background: rgba(0, 0, 0, 0.5);
-box-sizing: border-box;
+background: rgba(7, 7, 7, 0.5);
 border: none;
-border-radius: 7px;
-text-align: center
+text-align: center;
 }
-
 #roles {
-  background: #2C0C40;
-color: #fff;
+  background-color: #000;
 padding: 10px;
-border-radius: 7px;
 position:absolute;
 left: 25%;
 bottom: 20%;
+cursor: pointer;
+font-family: Beaufort for LOL,serif;
+font-size: 1.2rem;
+color: #937341;
+border: 2px solid  #937341;
 }
 
 #statistics{
-  background: #2C0C40;
-color: #fff;
-padding: 10px;
-border-radius: 7px;
-position:absolute;
 right: 20%;
 bottom: 20%;
+background-color: #000;
+padding: 10px;
+position:absolute;
+cursor: pointer;
+font-family: Beaufort for LOL,serif;
+font-size: 1.2rem;
+color: #937341;
+border: 2px solid  #937341;
 }
  .btnRole {
   line-height: 50px;
@@ -62,6 +112,7 @@ bottom: 20%;
   background-position: center center;
   /* <-- centrar la imagen en el boton */
 }
+
 
 .container{
   display: inline;
@@ -79,7 +130,7 @@ bottom: 20%;
    font-family: arial;
 
  }
-
+ 
  .title {
    color: black;
    font-size: 18px;
@@ -98,3 +149,41 @@ bottom: 20%;
    font-size: 18px;
  }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 60%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #000000;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

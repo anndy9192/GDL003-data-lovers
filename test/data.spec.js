@@ -14,23 +14,23 @@ describe('example', () => {
   });
 });
 */
-describe("filtrado", () => {
+describe("filterData", () => {
   it("is a function", () => {
-    expect(typeof example.filtrado).toBe("function");
+    expect(typeof example.filterData).toBe("function");
   });
-  it('returns `filtrado`', () => {
-    expect(example.filtrado(lol.data.Ahri, 'Assassin')).toBe(lol.data.Ahri);
+  it('returns `filterData`', () => {
+    expect(example.filterData(lol.data.Ahri, 'Assassin')).toBe(lol.data.Ahri);
   console.log(lol);
   });
 
 });
 
-describe("sorted", () => {
+describe("sortData", () => {
   it("is a function", () => {
-    expect(typeof example.sorted).toBe("function");
+    expect(typeof example.sortData).toBe("function");
   });
-  it('returns `sorted`', () => {
-    expect(example.sorted()).toBe('sorted');
+  it('returns `sortData`', () => {
+    expect(example.sortData()).toBe('sortData');
   });
 
 });
