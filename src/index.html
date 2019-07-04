@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title> 
   <style type="text/css"></style>
   <link rel="stylesheet" href="style.css" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
   <div id="root"></div>
-  <title>League of legends</title>
+
   <center>
     <div class="home">
+
       <img src="https://cdn.bleacherreport.net/images/team_logos/328x328/league_of_legends.png">
       <textarea rows="8" cols="80" id="description"
          placeholder="¿Qué es League of Legends? 
@@ -22,58 +25,64 @@
            real con elementos de juegos de rol, dos equipos de campeones,
             compiten cara a cara a través de campos de batalla, ofrece
              posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad."></textarea> <br><br>
+
       <a href="index.html"> <input type="button" id="statistics" value="Estadisticas de campeones"></a>
       <a href="index.html"><input type="button" id="roles" value="Rol de campeones"></a>
     </div>
 
     <div class="rolechampion">
-        <button type="button" class="btnRole" value="Assassin"
-          style="background-image: url(https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/assassins-banner.jpg?itok=AwzrM7_z)"
-          onclick="document.getElementById('cardsContainer').scrollIntoView();">Assassin</button>
+      <button type="button" class="btnRole" value="Assassin"
+        style="background-image: url(https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/assassins-banner.jpg?itok=AwzrM7_z)"
+        onclick="document.getElementById('cardsContainer').scrollIntoView();">Assassin</button>
 
-        <button type="button" class="btnRole" value="Marksman"
-          style="background-image: url(https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d)"
-          onclick="window.location.href='#cardsContainer'">
-          Marksman</button>
+      <button type="button" class="btnRole" value="Marksman"
+        style="background-image: url(https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d)"
+        onclick="window.location.href='#cardsContainer'">
+        Marksman</button>
 
-        <button type="button" class="btnRole" value="Tank"
-          style="background-image: url(https://i.ytimg.com/vi/2QvS_v7S9Rc/maxresdefault.jpg)"
-          onclick="window.location.href='#cardsContainer'"> Tank</button>
+      <button type="button" class="btnRole" value="Tank"
+        style="background-image: url(https://i.ytimg.com/vi/2QvS_v7S9Rc/maxresdefault.jpg)"
+        onclick="window.location.href='#cardsContainer'"> Tank</button>
 
-        <button type="button" class="btnRole" value="Fighter"
-          style="background-image: url(https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/16/a4/77/16a477b8-a219-374c-4388-1bbd0427ffec/source/200x200bb.jpg)"
-          onclick="window.location.href='#cardsContainer'">
-          Fighter</button>
+      <button type="button" class="btnRole" value="Fighter"
+        style="background-image: url(https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/16/a4/77/16a477b8-a219-374c-4388-1bbd0427ffec/source/200x200bb.jpg)"
+        onclick="window.location.href='#cardsContainer'">
+        Fighter</button>
 
-        <button type="button" class="btnRole" value="Support"
-          style="background-image: url(https://gamerstyle.com.mx/wp-content/uploads/2018/05/PIKE-LEAGUE-OF-LEGENDS-770x433.jpg)"
-          onclick="window.location.href='#cardsContainer'">
-          Support</button>
+      <button type="button" class="btnRole" value="Support"
+        style="background-image: url(https://gamerstyle.com.mx/wp-content/uploads/2018/05/PIKE-LEAGUE-OF-LEGENDS-770x433.jpg)"
+        onclick="window.location.href='#cardsContainer'">
+        Support</button>
 
-        <button id="test" type="button" class="btnRole" value="Mage"
-          style="background-image: url(https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/pages/2016/june/ryze/img/ryze-splash-1.jpg)"
-          onclick="window.location.href='#cardsContainer'">
-          Mage</button>
-      
+      <button id="test" type="button" class="btnRole" value="Mage"
+        style="background-image: url(https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/pages/2016/june/ryze/img/ryze-splash-1.jpg)"
+        onclick="window.location.href='#cardsContainer'">
+        Mage</button>
+
     </div>
   </center>
-    <br/><br/><br/>
+  <br /><br /><br />
 
-    <div class= "estadisticas">
-      <div class="row allStatistics">
-      </div>
+  <div class="estadisticas">
+    <div class="row allStatistics">
+    </div>
+  </div>
+
+  <div id="cardsContainer">
+    <button type="button" id="btnOrder">Ordenar</button>
+    <div class="row cards">
     </div>
 
-    <div id="cardsContainer">
-        <button type="button" id="btnOrder">Ordenar</button>
-      <div class="row cards">
-      </div>
-    </div>
-  
+  </div>
 
-    <script src="./data/lol/lol.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+  <div class="reinicio">
+    <button type="button" id="reiniciar" onclick="reiniciarPagina()" class="btn">Inicio</button>
+  </div>
+
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
