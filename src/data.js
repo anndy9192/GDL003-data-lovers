@@ -1,9 +1,9 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const filtrado = (allCharachters, role) => {
+const filterData = (allCharachters, role) => {
   //console.log(allCharachters);
-  let filtrado = [];
+  let filterData = [];
   //Recoririendo todos los personajes
   for (let i in allCharachters) {
     //si el elemento que se esta iterando (recorriendo) de lol tiene su propia propiedad (hasOwnProperty) verifica si tiene propiedades
@@ -12,62 +12,62 @@ const filtrado = (allCharachters, role) => {
       let element = allCharachters[i];
       //por cada un elemento del array tags de element se llamara champion 
       element.tags.forEach(champion => {
-        //si champion es == al rol, lo guarda en arreglo filtrado 
+        //si champion es == al rol, lo guarda en arreglo filterData 
         if (champion == role) {
           //Agregando al arreglo del champion
-          filtrado.push(element);
+          filterData.push(element);
         }
       });
     }
   }
-  //console.log(filtrado);
-  return filtrado;
+  //console.log(filterData);
+  return filterData;
 };
 
-const sorted = (charachters) => {
-  let sorted = charachters;
-  sorted.reverse();
-  return sorted;
+const sortData = (charachters) => {
+  let sortData = charachters;
+  sortData.reverse();
+  return sortData;
 };
 
 const computeStats = (allCharachters) => {
   var arrayStatistics = [];
 
   arrayStatistics.push({
-    "Role"  : "Assassin",
-    "Count" : filtrado(allCharachters, "Assassin").length
+    "Role": "Assassin",
+    "Count": filterData(allCharachters, "Assassin").length
   });
 
   arrayStatistics.push({
-    "Role"  : "Marksman",
-    "Count" : filtrado(allCharachters, "Marksman").length
+    "Role": "Marksman",
+    "Count": filterData(allCharachters, "Marksman").length
   });
 
   arrayStatistics.push({
-    "Role"  : "Tank",
-    "Count" : filtrado(allCharachters, "Tank").length
+    "Role": "Tank",
+    "Count": filterData(allCharachters, "Tank").length
   });
 
   arrayStatistics.push({
-    "Role"  : "Fighter",
-    "Count" : filtrado(allCharachters, "Fighter").length
+    "Role": "Fighter",
+    "Count": filterData(allCharachters, "Fighter").length
   });
 
   arrayStatistics.push({
-    "Role"  : "Support",
-    "Count" : filtrado(allCharachters, "Support").length
+    "Role": "Support",
+    "Count": filterData(allCharachters, "Support").length
   });
 
   arrayStatistics.push({
-    "Role"  : "Mage",
-    "Count" : filtrado(allCharachters, "Mage").length
+    "Role": "Mage",
+    "Count": filterData(allCharachters, "Mage").length
   });
 
   return arrayStatistics;
 };
 
 window.example = {
-  sorted,
-  filtrado,
+  sortData,
+  filterData,
   computeStats
 };
