@@ -14,20 +14,21 @@
 <body>
   <div id="root"></div>
 
-  <center>
+  
     <div class="home">
-
-      <img src="https://cdn.bleacherreport.net/images/team_logos/328x328/league_of_legends.png">
-      <textarea rows="8" cols="80" id="description"
+      <div id="logo">
+     <center> <img src="https://cdn.bleacherreport.net/images/team_logos/328x328/league_of_legends.png"> </center></div>
+     <center> <textarea id="description"
          placeholder="¿Qué es League of Legends? 
          Un juego competitivo en línea, que
           fusiona la velocidad y la intensidad de la estrategia en tiempo
            real con elementos de juegos de rol, dos equipos de campeones,
             compiten cara a cara a través de campos de batalla, ofrece
-             posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad."></textarea> <br><br>
+             posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad."></textarea> <br><br> </center>
 
-      <a href="index.html"> <input type="button" id="statistics" value="Estadisticas de campeones"></a>
-      <a href="index.html"><input type="button" id="roles" value="Rol de campeones"></a>
+             <center> <a href="index.html"> <input type="button" id="statistics" value="Estadisticas"></a> 
+              &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="index.html"><input type="button" id="roles" value="Rol de campeones"></a></center>
     </div>
 
     <div class="rolechampion">
@@ -60,7 +61,7 @@
         Mage</button>
 
     </div>
-  </center>
+  
   <br /><br /><br />
 
   <div class="estadisticas">
@@ -69,14 +70,16 @@
   </div>
 
   <div id="cardsContainer">
-    <button type="button" id="btnOrder">Ordenar</button>
+   <center> <button type="button" id="btnOrder">Ordenar</button> </center>
+   <br>
     <div class="row cards">
     </div>
 
   </div>
 
+  
   <div class="reinicio">
-    <button type="button" id="reiniciar" onclick="reiniciarPagina()" class="btn">Inicio</button>
+   <center> <button type="button" id="reiniciar" onclick="reiniciarPagina()" class="btn">Inicio</button> </center>
   </div>
 
 
