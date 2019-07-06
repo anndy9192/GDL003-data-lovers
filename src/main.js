@@ -174,7 +174,7 @@ function drawCards(filteredCharacters) {
 		});
 	});
 }
-
+ console
 function reiniciarPagina() {
 
 	location.reload();
