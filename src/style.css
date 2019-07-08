@@ -6,9 +6,19 @@
   height: 280px;
   
 }
- 
+#reiniciar2{
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+    background-color: #000;
+  font-family: Beaufort for LOL,serif;
+  font-size: 1.2rem;
+  color: #937341;
+  border: 1.5px solid  #937341;
+  width: 200px;
+}
 
-footer{
+a {
  color: aliceblue;
 }
 body{
@@ -308,6 +318,7 @@ h2 p{
     font-family: arial;
   }
   
+  
   #reiniciar {
     background-color: #000;
     cursor: pointer;
@@ -321,18 +332,7 @@ h2 p{
     margin-right: 100px;
 
   }
-  #reiniciar2 {
-    background-color: #000;
-    cursor: pointer;
-    font-family: Beaufort for LOL,serif;
-    font-size: 8px;
-    color: #937341;
-    border: 1px solid #937341;
-    height: 10px;
-    width: 10%;
-    float: right;
-    margin-right: 100px;
-  }
+
    .container {
       display: inline;
       float: left;
