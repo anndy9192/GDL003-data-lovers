@@ -3,11 +3,13 @@ let rolechampion = document.querySelector('.rolechampion');
 let estadisticas = document.querySelector('.estadisticas');
 let ordenar = document.getElementById("cardsContainer");
 let reiniciar = document.getElementById("reiniciar");
+let reiniciar2 = document.getElementById("reiniciar2");
 
 rolechampion.style.display = "none";
 estadisticas.style.display = "none";
 ordenar.style.display = "none";
 reiniciar.style.display = "none";
+reiniciar2.style.display = "none";
 let result;
 
 let btnRoles = document.getElementById("roles");
@@ -55,6 +57,8 @@ btnStatistics.addEventListener("click", function (event) {
 			</div>
 		</div>
 		`;
+	
+
 		reiniciar.style.display = "block";
 	});
 
@@ -89,12 +93,12 @@ function drawCards(filteredCharacters) {
 		<div class="container">
 			<div class="card">
 				<h1>${champion.name}</h1>
-				<img src="${champion.img}" width="30px" height="30px">
+				<img src="${champion.img}" width="90px" height="90px"> <br>
 				<p class="title">Stats:</p>
 				<p>Attack: ${champion.info.attack}</p>
 				<p>Defense: ${champion.info.defense}</p>
 				<p>Magic: ${champion.info.magic}</p>
-				<p>Difficulty: ${champion.info.difficulty}</p>
+				<p>Difficulty: ${champion.info.difficulty}</p> <br>
 				<!-- Trigger/Open The Modal -->
 				<p><button class="more" id="${champion.name}">More</button></p>
 			</div>
@@ -122,8 +126,6 @@ function drawCards(filteredCharacters) {
 						<p>hpregenperlevel: ${champion.stats.hpregenperlevel}</p>
 						<p>mpregen: ${champion.stats.mpregen}</p>
 						<p>mpregenperlevel: ${champion.stats.mpregenperlevel}</p>
-						<p>crit: ${champion.stats.crit}</p>
-						<p>critperlevel: ${champion.stats.critperlevel}</p>
 						<p>attackdamage: ${champion.stats.attackdamage}</p>
 						<p>attackdamageperlevel: ${champion.stats.attackdamageperlevel}</p>
 						<p>attackspeedoffset: ${champion.stats.attackspeedoffset}</p>
@@ -174,7 +176,31 @@ function drawCards(filteredCharacters) {
 		});
 	});
 }
- console
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'player'],
+          ['Assasin',  33],
+          ['Marksman', 24],
+		  ['Fighter',  66],
+		  ['Support',  27],
+		  ['Mage',     52]
+        ]);
+
+		
+        var options = {
+          title: 'Personajes por Rol de League of Legends'
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+
+
+	  reiniciar2.style.display = "block";
 function reiniciarPagina() {
 
 	location.reload();

@@ -47,6 +47,7 @@ const computeStats = (allCharachters) => {
     "Role": "Tank",
     "Count": filterData(allCharachters, "Tank").length
   });
+ 
 
   arrayStatistics.push({
     "Role": "Fighter",
