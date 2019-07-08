@@ -1,5 +1,4 @@
-[18:59, 5/7/2019] Anndy Lab: 
-[19:00, 5/7/2019] Anndy Lab: <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,80 +7,94 @@
   <style type="text/css"></style>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>>
 </head>
 
 <body>
   <div id="root"></div>
-    <div class="home">
-  
+   <div class="home">
      <center> <img id="logo"src="https://cdn.bleacherreport.net/images/team_logos/328x328/league_of_legends.png"> </center>
-     <center> <textarea id="description"
+      <center> <textarea id="description"
          placeholder="¿Qué es League of Legends? 
          Un juego competitivo en línea, que
-          fusiona la velocidad y la intensidad de la estrategia en tiempo
-           real con elementos de juegos de rol, dos equipos de campeones,
-            compiten cara a cara a través de campos de batalla, ofrece
-             posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad."></textarea> <br><br><br><br> </center>
+         fusiona la velocidad y la intensidad de la estrategia en tiempo
+         real con elementos de juegos de rol, dos equipos de campeones,
+         compiten cara a cara a través de campos de batalla, ofrece
+         posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad."></textarea> <br><br><br><br><br>
 
-             <center> <a href="index.html"> <input type="button" id="statistics" value="Estadisticas"></a> 
-              &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="index.html"><input type="button" id="roles" value="Rol de campeones"></a></center>
+            
+                <a href="index.html"><input type="button" id="roles" value="Rol de campeones"></a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="index.html"> <input type="button" id="statistics" value="Estadisticas"></a> 
+                <br><br><br>
+                  
+                <footer>
+                    <center>
+            
+                    © 2019 Riot Games League of Legends. <br>
+                     By Andrea Magallanes & Lesly Zuñiga <br>
+            
+                    </center>
+                    </footer>
+                          
+           
     </div>
 
     <div class="rolechampion">
       <button type="button" class="btnRole" value="Assassin"
-        style="background-image: url(https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/assassins-banner.jpg?itok=AwzrM7_z)"
+        style="background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/04/y2konya_AssassinsCreedUnity_20170911_14-16-23.jpg)"
         onclick="document.getElementById('cardsContainer').scrollIntoView();">Assassin</button>
 
       <button type="button" class="btnRole" value="Marksman"
-        style="background-image: url(https://c.wallhere.com/photos/d3/6e/Sakimichan_realistic_redhead_long_hair_Miss_Fortune_League_of_Legends-303713.jpg!d)"
+        style="background-image: url(https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/patch_9.3_notes_header.jpg?itok=_QrJxdNW)"
         onclick="window.location.href='#cardsContainer'">
         Marksman</button>
 
       <button type="button" class="btnRole" value="Tank"
-        style="background-image: url(https://i.ytimg.com/vi/2QvS_v7S9Rc/maxresdefault.jpg)"
-        onclick="window.location.href='#cardsContainer'"> Tank</button>
+        style="background-image: url(https://cdna.artstation.com/p/assets/images/images/009/248/572/large/yanpeng-zhao-lolgangplank.jpg?1517929318)"
+        onclick="window.location.href='#cardsContainer'"> Tank</button> <br>
 
       <button type="button" class="btnRole" value="Fighter"
-        style="background-image: url(https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/16/a4/77/16a477b8-a219-374c-4388-1bbd0427ffec/source/200x200bb.jpg)"
+        style="background-image: url(http://www.passion-pictures.com/uk/wp-content/uploads/sites/2/2017/10/LOL2.jpg)"
         onclick="window.location.href='#cardsContainer'">
         Fighter</button>
 
       <button type="button" class="btnRole" value="Support"
-        style="background-image: url(https://gamerstyle.com.mx/wp-content/uploads/2018/05/PIKE-LEAGUE-OF-LEGENDS-770x433.jpg)"
+        style="background-image: url(https://lan.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/tk_splash.jpg?itok=1QcdFnp-)"
         onclick="window.location.href='#cardsContainer'">
         Support</button>
 
       <button id="test" type="button" class="btnRole" value="Mage"
-        style="background-image: url(https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/pages/2016/june/ryze/img/ryze-splash-1.jpg)"
+        style="background-image: url(https://las.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/lallorona_splash_final_640.jpg?itok=UAljmUNN)"
         onclick="window.location.href='#cardsContainer'">
         Mage</button>
 
     </div>
   
-  <br /><br /><br />
+      <br /><br /><br />
 
   <div class="estadisticas">
-    <div class="row allStatistics">
-    </div>
-  </div>
+  
+      <div id="piechart"></div>>
+        <div class="row allStatistics"></div>
+        <center> <button type="button" id="reiniciar2" onclick="reiniciarPagina()" class="btn">Inicio</button> </center>
+  
+      </div>
 
   <div id="cardsContainer">
-    <br>
-   <center> <button type="button" id="btnOrder">Ordenar</button> </center>
+      <br>
+      <center> <button type="button" id="btnOrder">Ordenar</button> </center>
       <center> <button type="button" id="reiniciar" onclick="reiniciarPagina()" class="btn">Inicio</button> </center>
-   <br> <br> <br> <br>
-    <div class="row cards">
-    </div>
-
+      <br> <br> <br> <br>
+      <div class="row cards"></div>
   </div>
-
-
+  <br><br><br> <br>
+  
+  
+ 
 
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
-
 </html>

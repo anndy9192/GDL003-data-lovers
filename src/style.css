@@ -1,30 +1,43 @@
 #logo{
   position: center;
-  padding: -5%;
+  padding: 0.0%;
+  width: 280px;
+  padding-top: 0%;
+  height: 280px;
+  
 }
+ 
 
-.home {
-  background: url("https://lolstatic-a.akamaihd.net/site/bilgewater/1d0e96db6bd69523cf508365e1042f93171e3deb/img/act-1/act-1-world-layer-foreground.jpg");
-  background-position: center center;
+footer{
+ color: aliceblue;
+}
+body{
+  background: url("https://lolstatic-a.akamaihd.net/site/bilgewater/1d0e96db6bd69523cf508365e1042f93171e3deb/img/act-1/act-1-world-layer-middleground.jpg");
+
+  background-size: 100vw 100vh;
+  overflow-x:hidden;
+  overflow-x:hidden; 
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  
-  
-}
+  background-color: #000;
 
+}
 #description{
   font-family: Beaufort for LOL,serif;
-  color: #937341;
   font-size: 17px;
-  width: 480px;
-  height: 184px;
-  background: rgba(7, 7, 7, 0.5);
+  width: 579px;
+  height: 149px;
+  background: rgba(158, 181, 155, 0.23);
   text-align: center;
   
 }
+::placeholder{
+  color: #000;
+  font-family: Beaufort for LOL,serif;
+  font-size: 1.1rem;
+}
+
 
 #roles {
-  padding: 10px;
   padding: 10px;
   font-weight: 600;
   font-size: 20px;
@@ -32,11 +45,11 @@ background-color: #000;
 font-family: Beaufort for LOL,serif;
 font-size: 1.2rem;
 color: #937341;
-border: 2px solid  #937341;
+border: 1.5px solid  #937341;
+width: 200px;
 }
 
 #statistics{
-  padding: 10px;
 padding: 10px;
 font-weight: 600;
 font-size: 20px;
@@ -44,14 +57,17 @@ font-size: 20px;
 font-family: Beaufort for LOL,serif;
 font-size: 1.2rem;
 color: #937341;
-border: 2px solid  #937341;
+border: 1.5px solid  #937341;
+width: 200px;
 }
 
 .btnRole {
+  position: center;
+  padding: 12px 12px;
   line-height: 50px;
   width: 435px;
   height: 310px;
-  color: white;
+  color: rgb(10, 10, 10);
   background-size: cover;
   /* <-- escalar la imagen para cubrir el boton */
   background-position: center center;
@@ -59,6 +75,7 @@ border: 2px solid  #937341;
   font-family: Beaufort for LOL,serif;
 font-size: 450%;
 color: #937341;
+border: 1.5px solid  black;
 }
 
 .container{
@@ -73,19 +90,23 @@ color: #937341;
 .card {   
   box-shadow: 0 4px 8px 0 rgba(88, 74, 74, 0.2);
   max-width: 300px;
-  margin: auto;
+  margin: 10%;
   text-align: center;
   font-size: 100%;
+  padding: 10%;
 }
 
 h1{
   font-family: Beaufort for LOL,serif;
   color: #937341;
+  font-size: 30px;
 }
 
 p{
   font-family: Beaufort for LOL,serif;
-  color: #937341;
+  color: #fdfcfb;
+  font-size: 20px;
+
 }
 
 .more {
@@ -93,11 +114,10 @@ background-color: #000;
 font-family: Beaufort for LOL,serif;
 color: #937341;
 border: solid  #937341;
+border: 1.5px solid  #937341;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 #btnOrder {
 padding: 10px;
@@ -123,11 +143,17 @@ float: left;
   margin-right: 250px;
 }
 
+h2 p{
+  font-family: Beaufort for LOL,serif;
+  color: #257372;
+  font-size: 30px;
+}
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
-  padding: 10px;
+  width: 230px;
+  height: 300px;
+  padding: 12px;
 }
 
 
@@ -146,23 +172,24 @@ float: left;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  width: 60%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+  height: 150%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
+  background-color: rgba(37, 36, 36, 0.53); /* Black w/ opacity */  
   left: 50%;
-  top: 50%;
+  top: 70%; 
   transform: translate(-50%, -50%);
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #000000;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 45%; /* Could be more or less, depending on screen size */
+  height: 50%;
 }
 
 /* The Close Button */
@@ -179,6 +206,19 @@ float: left;
   text-decoration: none;
   cursor: pointer;
 }
+.footer {
+  font-family: "Helvetica Neue,sans-serif";
+  font-size: 11px;
+  line-height: 1.316;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  color: rgba(209, 197, 169, 0.4);
+  transition: color 0.2s linear;
+  word-break: keep-all;
+}
+
+
 
 @media (max-width: 425px){
   #description{
@@ -281,6 +321,18 @@ float: left;
     margin-right: 100px;
 
   }
+  #reiniciar2 {
+    background-color: #000;
+    cursor: pointer;
+    font-family: Beaufort for LOL,serif;
+    font-size: 8px;
+    color: #937341;
+    border: 1px solid #937341;
+    height: 10px;
+    width: 10%;
+    float: right;
+    margin-right: 100px;
+  }
    .container {
       display: inline;
       float: left;
@@ -289,4 +341,127 @@ float: left;
       width: 20%;
       height: 10%;
   }
+  }
+  @media all and ( max-device-width: 680px)
+  {
+    #description{
+      font-family: Beaufort for LOL,serif;
+      color: #937341;
+      font-size: 10px;
+      width: 378px;
+      height: 212px;
+      background: rgba(7, 7, 7, 0.5);
+      text-align: center;
+    }
+    .lateral{
+    width: 33%;
+    float: right;
+    background-color: #6fe;
+    }
+    }
+  
+    @media all and (max-device-width: 480px)
+    {
+      #logo{
+        height: 250px;
+        width: 200px;
+       }
+    
+       #description {
+        font-family: Beaufort for LOL,serif;
+        color: #937341;
+        font-size: 10px;
+        background: rgba(7, 7, 7, 0.5);
+        text-align: center;
+        margin: 0px;
+        height: 100px;
+        width: 280px;
+    }
+      #roles {
+        background-color: #000;
+        cursor: pointer;
+        font-family: Beaufort for LOL,serif;
+        font-size: 8px;
+        color: #937341;
+        border: 1px solid #937341;
+        height: 10px;
+        width: 100px;
+        position: relative;
+      
+      }
+      
+      #statistics {
+        background-color: #000;
+        cursor: pointer;
+        font-family: Beaufort for LOL,serif;
+        font-size: 8px;
+        color: #937341;
+        border: 1px solid #937341;
+        height: 10px;
+        width: 100px;
+        position: relative;
+    }
+    
+    .btnRole {
+      line-height: 50px;
+      width: 300px;
+      height: 280px;
+      color: #937341;
+      border: 1px solid #937341;
+      background-size: cover;
+      background-position: center center;
+    }
+    
+    #btnOrder {
+      background-color: #000;
+      cursor: pointer;
+      font-family: Beaufort for LOL,serif;
+      font-size: 8px;
+      color: #937341;
+      border: 1px solid #937341;
+      height: 10px;
+      width: 10%;
+      float: left;
+      margin-left: 100px;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(88, 74, 74, 0.2);
+      max-width: 5px;
+      text-align: center;
+      font-family: arial;
+    }
+    
+    #reiniciar {
+      background-color: #000;
+      cursor: pointer;
+      font-family: Beaufort for LOL,serif;
+      font-size: 8px;
+      color: #937341;
+      border: 1px solid #937341;
+      height: 10px;
+      width: 10%;
+      float: right;
+      margin-right: 100px;
+  
+    }
+    #reiniciar2 {
+      background-color: #000;
+      cursor: pointer;
+      font-family: Beaufort for LOL,serif;
+      font-size: 8px;
+      color: #937341;
+      border: 1px solid #937341;
+      height: 10px;
+      width: 100px;
+      position: relative;
+  
+    }
+     .container {
+        display: inline;
+        float: left;
+        font-size: 8px;
+        line-height: 0;
+        width: 20%;
+        height: 10%;
+    }
   }
